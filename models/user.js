@@ -19,7 +19,7 @@ module.exports = function (sequelize, DateTypes){
 		hooks: {
 			beforeValidate: function (user,options) {
 				//user.email
-				if(typeof user,email === 'string'){
+				if(typeof user.email === 'string'){
 					user.email = user.email.toLowerCase();
 				}
 			}
